@@ -1,0 +1,54 @@
+.join-login-box{
+
+    @include flex-center;
+    flex-direction: column;
+    padding: 3%;
+
+    .logo-homepage{
+        @include flex-center;
+        
+        width: 100%;
+        
+        img{
+            width: 180px;
+            height: 80px;
+        }
+    }
+
+}
+.welcome-box{
+    width: 400px;
+    height: 400px;
+    background-color: $color-white;
+    box-shadow: 0px 1px 12px 0px #0000001f;
+    @include border-radius(4);
+    text-align: center;
+
+    .welcome{
+        padding: 30px;
+        color: rgb(9, 30, 66);
+
+        span{
+            font-weight: bold;
+            font-size: 2em;
+        }
+        p{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        button{
+            width: 80%;
+            height: 30px;
+            background-color: #5AAC44;
+            border: none;
+            color: $color-white;
+            @include border-radius(3);
+            cursor: pointer;
+
+            &:hover{
+                background-color: #72c759;
+            }
+            
+        }
+    }
+}

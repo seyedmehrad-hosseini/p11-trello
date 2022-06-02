@@ -1,0 +1,14 @@
+
+
+.home-bg-left{
+
+    @include backgroun-img-hompage;
+    left : 0;
+
+}
+.home-bg-right{
+
+    @include backgroun-img-hompage;
+    right : 0;
+
+}
