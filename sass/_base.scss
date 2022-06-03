@@ -2,6 +2,16 @@ $color-white : white;
 $color-font :rgb(9, 30, 66);
 $color-bg-button :#5AAC44;
 $color-bg-button-hover :#72c759;
+
+//header colors
+$bg-header-color :#026AA7;
+$bg-header-hover-color:rgba(255, 255, 255, 0.3);
+$bg-header-create-color:rgba(0, 0, 0, 0.3);
+
+
+//search box color in header
+$bg-searchbox-color :#3588b9;
+$border-serachbox-color :#5ea1c7;
 @mixin transition($num) {
     transition:#{$num}s ease-in-out ;
     -webkit-transition:#{$num}s ease-in-out;
