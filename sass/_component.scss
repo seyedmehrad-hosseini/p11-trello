@@ -16,7 +16,21 @@
     }
 
 }
-.welcome-box{
+.join-button{
+    width: 80%;
+    height: 30px;
+    background-color: $color-bg-button;
+    border: none;
+    color: $color-white;
+    @include border-radius(3);
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-bg-button-hover;
+    }
+    
+}
+.welcome-login-box{
     width: 400px;
     height: 400px;
     background-color: $color-white;
@@ -26,7 +40,7 @@
 
     .welcome{
         padding: 30px;
-        color: rgb(9, 30, 66);
+        color: $color-font;
 
         span{
             font-weight: bold;
@@ -36,19 +50,60 @@
             margin-top: 30px;
             margin-bottom: 30px;
         }
-        button{
+
+    }
+    .login{
+        @include flex-center;
+        flex-direction: column;
+        padding: 30px;
+        span{
+            color: $color-font;
+        }
+        input{
             width: 80%;
             height: 30px;
-            background-color: #5AAC44;
+            margin-top: 20px;
             border: none;
-            color: $color-white;
-            @include border-radius(3);
-            cursor: pointer;
-
-            &:hover{
-                background-color: #72c759;
-            }
+            outline: 2px solid rgba(138, 131, 131, 0.26);
+            @include border-radius(1);
+            @include transition(.5);
+            background-color: #F9FAFC;
             
+
+            &:focus{
+                border: none;
+                outline: 2px solid rgba(88, 158, 216, 0.835);
+                background-color: $color-white;
+
+            }
+
+        }
+        ::placeholder{
+
+            font-size: .7rem;
+            color: rgba(128, 128, 128, 0.774);
+    
+        }
+        :-ms-input-placeholder{
+            font-size: .7rem;
+            color: gray;
+
+        }
+        ::-ms-input-placeholder{
+            font-size: .7rem;
+            color: gray;
+
         }
     }
+}
+
+.login > .login-button{
+    @include flex-center;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 30px;
+    .join-button{
+        width: 45%;
+    }
+
 }

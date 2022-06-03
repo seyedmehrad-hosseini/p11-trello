@@ -1,5 +1,14 @@
 $color-white : white;
-
+$color-font :rgb(9, 30, 66);
+$color-bg-button :#5AAC44;
+$color-bg-button-hover :#72c759;
+@mixin transition($num) {
+    transition:#{$num}s ease-in-out ;
+    -webkit-transition:#{$num}s ease-in-out;
+    -moz-transition:#{$num}s ease-in-out;
+    -ms-transition:#{$num}s ease-in-out;
+    -o-transition:#{$num}s ease-in-out;
+}
 @mixin border-radius($num) {
     border-radius:#{$num}px ;
     -webkit-border-radius:#{$num}px;

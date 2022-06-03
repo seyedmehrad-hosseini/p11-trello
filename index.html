@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Document</title>
+
 </head>
 <body>
+
+    <script src="scripts/Main.js"  ></script>
+    <script src="scripts/login-page.js"  ></script>
+
+    <script src="scripts/login.js" ></script>
+    <script src="scripts/check_info.js" ></script>
+
     <div class="join-login-box">
         <div class="logo-homepage">
             <img src="images/trello-logo-blue.svg" alt="">
         </div>
-        <div class="welcome-box">
+        <div class="welcome-login-box" id="welcome-login-box">
             <div class="welcome">
 
                 <span class="title">Trello helps teams move work forward</span>
                 <p>Click join to login or signin</p>
-                <button>join</button>
+                <button class="join-button" onclick="login_load()" >join</button>
 
+            </div>
+            <div>
+                
             </div>
             
         </div>
@@ -26,6 +37,7 @@
     <div class="home-bg-left"><img src="images/backgrond-svg-left.png" alt=""></div>
     <div class="home-bg-right"><img src="images/backgrond-svg-right.png" alt=""></div>
 
-    
+
+
 </body>
 </html>
