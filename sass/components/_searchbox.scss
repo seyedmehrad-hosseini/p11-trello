@@ -1,0 +1,54 @@
+.search-box{
+    width: 45% !important;
+    justify-content: end !important;
+
+    &:hover{
+        background-color: $bg-header-color !important;
+    }
+    
+
+    div{
+        border: 1px solid $border-serachbox-color;
+        padding: 6px 4px;
+        box-sizing: border-box;
+        @include border-radius(3);
+        width: 250px;
+        background-color: $bg-searchbox-color ;
+        @include flex-center;
+        &:hover{
+            background-color: $bg-header-hover-color;
+            
+
+        }
+        i{
+            width: 10%;
+            background-color: transparent;
+        }
+        input{
+            width: 90%;
+            background-color: transparent;
+            outline: 0;
+            border: none;
+    
+        }
+        ::placeholder{
+            font-family: sans-serif !important;
+            font-size: .7rem;
+            color: $color-white;
+    
+        }
+        :-ms-input-placeholder{
+            font-family: sans-serif !important;
+            font-size: .7rem;
+            color: $color-white;
+
+        }
+        ::-ms-input-placeholder{
+            font-family: sans-serif !important;
+            font-size: .7rem;
+            color: $color-white;
+
+        }
+    }
+
+}

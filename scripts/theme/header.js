@@ -1,5 +1,5 @@
 
-const header = () =>{
+const header = (id) =>{
     const a = `
             <div class="header">
 
@@ -43,5 +43,5 @@ const header = () =>{
             </div>
     `
 
-    
+    document.getElementById(id).innerHTML=a
 }

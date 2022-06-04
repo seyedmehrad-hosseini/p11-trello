@@ -1,0 +1,92 @@
+.header{
+    font-size: .9em;
+    padding: 0px  5px;
+    
+    background-color: $bg-header-color;
+    color: $color-white;
+
+    ul{
+        @include flex-center;
+
+        li{
+            width: 8%;
+            padding: 6px;
+            @include flex-center;
+            @include border-radius(4);
+            &:hover{
+                background-color: $bg-header-hover-color;
+                
+
+            }
+
+        }
+
+
+    }
+}
+
+ul > :nth-child(1){
+
+    width: 2% !important;
+    display: block !important;
+        i{
+            width: 2px;
+        }
+    
+}
+ul > :nth-child(2){
+
+    
+        img{
+            width: 90%;
+            
+        }
+    
+}
+ul > :nth-child(7){
+    width: 4% !important;
+    background-color: $bg-header-create-color;
+
+
+}
+ul > :nth-child(9){
+    width: 2% !important;
+
+    span{
+        width: 15px;
+        height: 15px;
+        border :2px solid $color-white;
+        @include flex-center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+
+}
+ul > :nth-child(10){
+    width: 2% !important;
+    i{
+        font-size: 1.2em;
+    }
+
+
+}
+ul > :nth-child(11){
+    width: 3% !important;
+
+    img{
+        width: 30px;
+        height:30px ;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        object-fit: cover;
+}
+
+
+}
