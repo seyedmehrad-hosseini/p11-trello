@@ -1,9 +1,9 @@
-const users = [{"username" :"ali" , "password" : 123}]
+const users = [{"username" :"ali" , "password" : "123"}]
 
 const sign_in = () =>{
     
     const username_box_value = document.getElementById("username-login").value
-    const password_box_value = parseInt(document.getElementById("password-login").value)
+    const password_box_value = document.getElementById("password-login").value
 
     
     
@@ -46,7 +46,7 @@ const sign_in = () =>{
 const ckeck_is_logedin = () =>{
 
     const username_box_value = document.getElementById("username-login").value
-    const password_box_value = parseInt(document.getElementById("password-login").value)
+    const password_box_value = document.getElementById("password-login").value
 
     if(!check_username(users , username_box_value) & !check_password(users , password_box_value)){
 

@@ -5,11 +5,11 @@ const sidbar = (id)=>{
         <span class="account">
             Account Preferences
         </span>
-        <ul class="account-list">
-            <li onclick="main_theme_loade(info())">Profile Information</li>
-            <li onclick="main_theme_loade(display())">Display</li>
-            <li onclick="main_theme_loade(changepass())">Change Password</li>
-            <li onclick="main_theme_loade(manage_acc())">Account Management</li>
+        <ul class="account-list" id="account-list">
+            <li id="list1" data-id2="list2" onclick="main_theme_load(info() , id)">Profile Information</li>
+            <li id="list2" data-id2="list1" onclick="main_theme_load(display() , id)">Display</li>
+            <li id="list3" data-id2="list2" onclick="main_theme_load(changepass() , id)">Change Password</li>
+            <li id="list4" data-id2="list3" onclick="main_theme_load(manage_acc() , id)">Account Management</li>
         </ul>
     
 

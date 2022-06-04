@@ -1,5 +1,5 @@
 const main_page_theme = (id) =>{
-    console.log(id)
+   
     const b = `
     <div class="theme-page" id="theme-page">
         <div class="theme-header" id="theme-header">
@@ -7,7 +7,7 @@ const main_page_theme = (id) =>{
         <div class="side-bar" id="side-bar">
         
         </div>
-        <div class="main">
+        <div class="main" id="maintheme">
         
         </div>
 
@@ -16,6 +16,7 @@ const main_page_theme = (id) =>{
     document.getElementById(id).innerHTML = b
     header("theme-header")
     sidbar("side-bar")
+    main_theme_load(info(),"list1",)
 
 
 }
