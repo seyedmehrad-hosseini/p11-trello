@@ -1,0 +1,33 @@
+.side-bar{
+    @include flex-center;
+    justify-content: start !important;
+    flex-direction: column;
+    padding: 4% 0px;
+
+    .account{
+
+        font-weight: bold;
+        font-size: 1.2em;
+
+    }
+    .account-list{
+        padding: 20px 0px;
+        width: 80%;
+
+        li{
+            padding: 10px;
+            @include border-radius(3);
+            font-weight: bold;
+            font-size: .9em;
+            color: $color-font;
+            cursor: pointer;
+            &:hover{
+                background-color: $bg-sidebar-hover-item;
+            }
+        }
+
+
+    }
+
+
+}

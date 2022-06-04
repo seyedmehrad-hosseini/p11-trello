@@ -12,6 +12,9 @@ $bg-header-create-color:rgba(0, 0, 0, 0.3);
 //search box color in header
 $bg-searchbox-color :#3588b9;
 $border-serachbox-color :#5ea1c7;
+
+//theme side bar colors
+$bg-sidebar-hover-item :rgba(9, 30, 66, 0.08);
 @mixin transition($num) {
     transition:#{$num}s ease-in-out ;
     -webkit-transition:#{$num}s ease-in-out;

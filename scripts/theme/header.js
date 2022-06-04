@@ -3,7 +3,7 @@ const header = (id) =>{
     const a = `
             <div class="header">
 
-                <ul>
+                <ul class="header-list">
                     <li>
                         <i class="fa fa-ellipsis-v"></i>
                         <i class="fa fa-ellipsis-v"></i>
@@ -43,5 +43,5 @@ const header = (id) =>{
             </div>
     `
 
-    document.getElementById(id).innerHTML=a
+    document.getElementById(id).innerHTML= a
 }

@@ -5,7 +5,7 @@
     background-color: $bg-header-color;
     color: $color-white;
 
-    ul{
+    .header-list{
         @include flex-center;
 
         li{
@@ -25,16 +25,18 @@
     }
 }
 
-ul > :nth-child(1){
+.header-list > :nth-child(1){
 
     width: 2% !important;
-    display: block !important;
+    // display: block !important;
+    @include flex-center;
+    gap: 3px;
         i{
             width: 2px;
         }
     
 }
-ul > :nth-child(2){
+.header-list > :nth-child(2){
 
     
         img{
@@ -43,13 +45,13 @@ ul > :nth-child(2){
         }
     
 }
-ul > :nth-child(7){
+.header-list > :nth-child(7){
     width: 4% !important;
     background-color: $bg-header-create-color;
 
 
 }
-ul > :nth-child(9){
+.header-list > :nth-child(9){
     width: 2% !important;
 
     span{
@@ -66,7 +68,7 @@ ul > :nth-child(9){
 
 
 }
-ul > :nth-child(10){
+.header-list > :nth-child(10){
     width: 2% !important;
     i{
         font-size: 1.2em;
@@ -74,7 +76,7 @@ ul > :nth-child(10){
 
 
 }
-ul > :nth-child(11){
+.header-list > :nth-child(11){
     width: 3% !important;
 
     img{
