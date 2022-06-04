@@ -1,6 +1,10 @@
 
-const login_page = (box_id)=>{
+const login_page = ()=>{
 
+
+    const box_id = document.getElementById("welcome-login-box")
+    const removed_welcom_tag = box_id.getElementsByTagName("div")[0]
+    box_id.removeChild(removed_welcom_tag)
     const added_login_tag = `
                         <div class="login">
                             <span>sign in or log in to trello</span>

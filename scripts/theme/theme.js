@@ -1,4 +1,4 @@
-const main_page = (id) =>{
+const main_page_theme = (id) =>{
     console.log(id)
     const b = `
     <div class="theme-page" id="theme-page">

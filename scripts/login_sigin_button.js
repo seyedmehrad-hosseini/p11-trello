@@ -1,9 +1,9 @@
-const users = []
+const users = [{"username" :"ali" , "password" : 123}]
 
 const sign_in = () =>{
     
     const username_box_value = document.getElementById("username-login").value
-    const password_box_value = document.getElementById("password-login").value
+    const password_box_value = parseInt(document.getElementById("password-login").value)
 
     
     
@@ -12,7 +12,7 @@ const sign_in = () =>{
         if(users =='' ){
 
             users.push({"username" : username_box_value, "password" : password_box_value})
-    
+            main_page_theme('container')
         }
         else{
 
@@ -20,7 +20,7 @@ const sign_in = () =>{
                 {
     
                     users.push({"username" : username_box_value, "password" : password_box_value})
-    
+                    main_page_theme('container')
                 }
                 else{
     
@@ -37,8 +37,8 @@ const sign_in = () =>{
     }
 
     //go to theme page for selecting theme
-    document.getElementById("username-login").value = ''
-    document.getElementById("password-login").value = ''
+    // document.getElementById("username-login").value = ''
+    // document.getElementById("password-login").value = ''
     console.log(users)
 
 }
@@ -46,7 +46,7 @@ const sign_in = () =>{
 const ckeck_is_logedin = () =>{
 
     const username_box_value = document.getElementById("username-login").value
-    const password_box_value = document.getElementById("password-login").value
+    const password_box_value = parseInt(document.getElementById("password-login").value)
 
     if(!check_username(users , username_box_value) & !check_password(users , password_box_value)){
 
