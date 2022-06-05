@@ -1,4 +1,4 @@
-.information{
+.display-theme{
     width: 100%;
     @include flex-center;
     justify-content: start !important;
@@ -8,24 +8,28 @@
     @include border-radius(5);
     background-color: $info-bg-color;
     box-shadow: $box-shadow;
-
-    .info-title{
+    .display-title{
         width: 100%;
         font-size: 1.1em;
         font-weight: bold;
     }
     div{
-        width: 50%;
+        width: 25%;
         @include flex-center;
         margin-top: 50px;
-        span{
-            width: 20%;
-        }
-        @include input;
-        input{
-            width: 70% !important;
-            margin-top: 0 !important;
-            background-color: $color-white !important;
+        img{
+            width: 200px;
+            height: 130px;
+            @include border-radius(5);
+            box-shadow: $box-shadow;
+            cursor: pointer;
+            @include transition(.3);
+            &:hover{
+                width: 210px;
+                height: 130px;
+
+            }
+
         }
 
 
@@ -37,10 +41,5 @@
             width: 30% !important;
         }
     }
-    .account-profile-photo{
-        width: 100%;
-        span{
-            width: 30%;
-        }
-    }
+    
 }

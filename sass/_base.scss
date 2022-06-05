@@ -15,6 +15,14 @@ $border-serachbox-color :#5ea1c7;
 
 //theme side bar colors
 $bg-sidebar-hover-item :rgba(9, 30, 66, 0.08);
+
+//info bg color
+$info-bg-color :#3588b917;
+$info-bg-border-color :#5ea1c72e;
+
+
+$box-shadow :0px 1px 12px 0px #00000075;
+
 @mixin transition($num) {
     transition:#{$num}s ease-in-out ;
     -webkit-transition:#{$num}s ease-in-out;

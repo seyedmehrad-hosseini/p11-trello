@@ -26,7 +26,7 @@ const info=() =>{
                                 accept=".jpg, .jpeg, .png">
                             </div>
                             <div class="info-button">
-                                <button class="join-button">ADD</button>
+                                <button class="join-button">Add</button>
 
                             </div>
                         </div>
