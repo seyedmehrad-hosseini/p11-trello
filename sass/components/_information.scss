@@ -1,0 +1,40 @@
+.information{
+    width: 100%;
+    @include flex-center;
+    justify-content: start !important;
+    flex-wrap: wrap;
+    .info-title{
+        width: 100%;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    div{
+        width: 50%;
+        @include flex-center;
+        margin-top: 50px;
+        span{
+            width: 20%;
+        }
+        @include input;
+        input{
+            width: 70% !important;
+            margin-top: 0 !important;
+            background-color: $color-white !important;
+        }
+
+
+    }
+    .info-button{
+        width: 100%;
+        justify-content: start !important;
+        button{
+            width: 30% !important;
+        }
+    }
+    .account-profile-photo{
+        width: 100%;
+        span{
+            width: 30%;
+        }
+    }
+}

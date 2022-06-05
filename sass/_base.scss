@@ -49,3 +49,41 @@ $bg-sidebar-hover-item :rgba(9, 30, 66, 0.08);
     }
     
 }
+@mixin  input {
+    input{
+        width: 80%;
+        height: 30px;
+        margin-top: 20px;
+        border: none;
+        outline: 2px solid rgba(138, 131, 131, 0.26);
+        @include border-radius(1);
+        @include transition(.5);
+        background-color: #F9FAFC;
+        
+
+        &:focus{
+            border: none;
+            outline: 2px solid rgba(88, 158, 216, 0.835);
+            background-color: $color-white;
+
+        }
+
+    }
+    ::placeholder{
+
+        font-size: .7rem;
+        color: rgba(128, 128, 128, 0.774);
+
+    }
+    :-ms-input-placeholder{
+        font-size: .7rem;
+        color: gray;
+
+    }
+    ::-ms-input-placeholder{
+        font-size: .7rem;
+        color: gray;
+
+    }
+    
+}

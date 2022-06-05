@@ -21,8 +21,9 @@
     <script src="scripts/theme/mainthemecomponent/display.js"></script>
     <script src="scripts/theme/mainthemecomponent/change_pass.js"></script>
     <script src="scripts/theme/mainthemecomponent/manage_account.js"></script>
+    <script src="scripts/tamrin.js"></script>
 
-<div class="container" id="container">
+<!-- <div class="container" id="container">
     <div class="join-login-box">
         <div class="logo-homepage">
             <img src="images/trello-logo-blue.svg" alt="">
@@ -44,9 +45,9 @@
     <div class="home-bg-left"><img src="images/backgrond-svg-left.png" alt=""></div>
     <div class="home-bg-right"><img src="images/backgrond-svg-right.png" alt=""></div> 
 
-</div>
+</div> -->
  
-    <!-- <div class="theme-page" id="theme-page">
+    <div class="theme-page" id="theme-page">
         <div class="theme-header">
             <div class="header">
 
@@ -83,7 +84,7 @@
 
                     </li>
                     <li>
-                        <img src="images/tabiat.jpg" alt="">
+                        <img id="profile-header" src="images/tabiat.jpg" alt="">
                     </li>
                 </ul>
 
@@ -93,19 +94,21 @@
             <span class="account">
                 Account Preferences
             </span>
-            <ul class="account-list">
-                <li onclick="main_theme_loade(info())">Profile Information</li>
-                <li onclick="main_theme_loade(display())">Display</li>
-                <li onclick="main_theme_loade(changepass())">Change Password</li>
-                <li onclick="main_theme_loade(manage_acc())">Account Management</li>
+            <ul class="account-list" id="account-list">
+                <li id="list1"  onclick="main_theme_load(info() , id)">Profile Information</li>
+                <li id="list2"  onclick="main_theme_load(display() , id)">Display</li>
+                <li id="list3"  onclick="main_theme_load(changepass() , id)">Change Password</li>
+                <li id="list4"  onclick="main_theme_load(manage_acc() , id)">Account Management</li>
             </ul>
         </div>
-        <div class="main" id="maintheme">
+        <div class="main-of-theme" id="maintheme">
+
+            <div class=""></div>
 
         
         </div>
 
-    </div> -->
+    </div>
   
     <!-- <button onclick="main_page('container')">helo</button> -->
 </body>

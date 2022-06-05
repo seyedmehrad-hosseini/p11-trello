@@ -36,7 +36,7 @@ const header = (id) =>{
 
                     </li>
                     <li>
-                        <img src="images/tabiat.jpg" alt="">
+                        <img id="profile-header" src="images/tabiat.jpg" alt="">
                     </li>
                 </ul>
 

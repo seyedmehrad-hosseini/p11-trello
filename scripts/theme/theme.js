@@ -7,7 +7,7 @@ const main_page_theme = (id) =>{
         <div class="side-bar" id="side-bar">
         
         </div>
-        <div class="main" id="maintheme">
+        <div class="main-of-theme" id="maintheme">
         
         </div>
 
