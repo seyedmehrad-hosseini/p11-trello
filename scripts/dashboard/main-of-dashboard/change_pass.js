@@ -1,4 +1,4 @@
-const changepass=() =>{
+const changepass=(usename_of_user) =>{
 
     const a = `
                             <div class="change-pass-theme">
@@ -6,18 +6,18 @@ const changepass=() =>{
 
                                 <div class="name-input" >
                                     <span>last password:</span>
-                                    <input type="text" id="name-input" placeholder="Name">
+                                    <input type="text" id="last-pass-input" placeholder="last password">
                                 </div>
                                 <div class="lastname-input" >
                                     <span>repeat last password:</span>
-                                    <input type="text" id="name-input" placeholder="Last Name">
+                                    <input type="text" id="repeat-pass-input" placeholder="last password">
                                 </div>
                                 <div class="lastname-input" >
                                     <span>new pass:</span>
-                                    <input type="text" id="E-mail-input" placeholder="E-mail">
+                                    <input type="text" id="new-pass-input" placeholder="new pass">
                                 </div>
                                 <div class="info-button">
-                                    <button class="join-button">Change pass</button>
+                                    <button onclick="changing_pass('${usename_of_user}')" id="change-pass-button" class="join-button">Change pass</button>
 
                                 </div>
                             </div>
