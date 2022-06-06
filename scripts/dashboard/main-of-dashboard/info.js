@@ -1,4 +1,5 @@
-const info=() =>{
+const info=(usename_of_user) =>{
+
 
     const a = `
                         <div class="information">
@@ -10,7 +11,7 @@ const info=() =>{
                             </div>
                             <div class="lastname-input" >
                                 <span>Lastname:</span>
-                                <input type="text" id="name-input" placeholder="Last Name">
+                                <input type="text" id="lastname-input" placeholder="Last Name">
                             </div>
                             <div class="lastname-input" >
                                 <span>E-mail:</span>
@@ -26,11 +27,12 @@ const info=() =>{
                                 accept=".jpg, .jpeg, .png">
                             </div>
                             <div class="info-button">
-                                <button class="join-button">Add</button>
+                                <button onclick="add_info('${usename_of_user}')" class="join-button" id="user-info-dashboard">Add</button>
 
                             </div>
                         </div>
     `
-    
+
     return a
+
 }

@@ -17,7 +17,7 @@ const changepass=() =>{
                                     <input type="text" id="E-mail-input" placeholder="E-mail">
                                 </div>
                                 <div class="info-button">
-                                    <button class="join-button">Add</button>
+                                    <button class="join-button">Change pass</button>
 
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-const dashboard_page = (id) =>{
+const dashboard_page = (id , usename_of_user) =>{
    
     const b = `
     <div class="theme-page" id="theme-page">
@@ -13,10 +13,11 @@ const dashboard_page = (id) =>{
 
     </div>
     `
+    console.log(usename_of_user)
     document.getElementById(id).innerHTML = b
     header("dashboard-header")
-    sidbar_in_dashboard("side-bar")
-    main_of_dashboard_load(info(),"list1",)
+    sidbar_in_dashboard("side-bar",usename_of_user)
+    main_of_dashboard_load(info(usename_of_user),"list1",)
 
 
 }

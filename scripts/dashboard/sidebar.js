@@ -1,4 +1,4 @@
-const sidbar_in_dashboard = (id)=>{
+const sidbar_in_dashboard = (id ,usename_of_user)=>{
 
     const sidbar = `
     
@@ -6,10 +6,10 @@ const sidbar_in_dashboard = (id)=>{
             Account Preferences
         </span>
         <ul class="account-list" id="account-list">
-            <li id="list1"  onclick="main_of_dashboard_load(info() , id)">Profile Information</li>
-            <li id="list2"  onclick="main_of_dashboard_load(display() , id)">Display</li>
-            <li id="list3"  onclick="main_of_dashboard_load(changepass() , id)">Change Password</li>
-            <li id="list4"  onclick="main_of_dashboard_load(manage_acc() , id)">Account Management</li>
+            <li id="list1"  onclick="main_of_dashboard_load(info('${usename_of_user}') , id)">Profile Information</li>
+            <li id="list2"  onclick="main_of_dashboard_load(display('${usename_of_user}') , id)">Display</li>
+            <li id="list3"  onclick="main_of_dashboard_load(changepass('${usename_of_user}') , id)">Change Password</li>
+            <li id="list4"  onclick="main_of_dashboard_load(manage_acc('${usename_of_user}') , id)">Account Management</li>
         </ul>
     
 

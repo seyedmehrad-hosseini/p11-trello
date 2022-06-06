@@ -1,24 +1,37 @@
-const display=() =>{
+const display=(usename_of_user) =>{
 
     const a = `
-                    <div class="display-theme">
+                    <div class="display-theme" id="display-dashboard">
                         <span class="display-title">Select background image for app</span>
-                        <div>
+                        <div id="display-bg1" onclick="select_bg(id ,'${usename_of_user}')" value="tick1">
                             <img src="images/bg-1.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/bg-2.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/bg-3.jpg" alt="">
-                        </div>
-                        <div>
-                            <img src="images/bg-4.jpg" alt="">
-                        </div>
-                        <div class="info-button">
-                            <button class="join-button">Submit</button>
+                            <span id="tick1">
+                                <i class="fa fa-check" aria-hidden="true"></i>
 
+                            </span>
                         </div>
+                        <div id="display-bg2" onclick="select_bg(id ,'${usename_of_user}')" value="tick2">
+                            <img src="images/bg-2.jpg" alt="">
+                            <span id="tick2">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+
+                            </span>
+                        </div>
+                        <div id="display-bg3" onclick="select_bg(id ,'${usename_of_user}')" value="tick3">
+                            <img src="images/bg-3.jpg" alt="">
+                            <span id="tick3">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+
+                            </span>
+                        </div>
+                        <div id="display-bg4" onclick="select_bg(id ,'${usename_of_user}')" value="tick4">
+                            <img src="images/bg-4.jpg" alt="">
+                            <span id="tick4">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+
+                            </span>
+                        </div>
+
                     </div>
 
     `

@@ -1,6 +1,7 @@
-const users = [{"username" :"ali" , "password" : "123"}]
+    const users = [{"username" :"ali" , "password" : "123"}]
 
-const sign_in = () =>{
+
+    const sign_in = () =>{
     
     const username_box_value = document.getElementById("username-login").value
     const password_box_value = document.getElementById("password-login").value
@@ -12,7 +13,7 @@ const sign_in = () =>{
         if(users =='' ){
 
             users.push({"username" : username_box_value, "password" : password_box_value})
-            dashboard_page('container')
+            dashboard_page('container',username_box_value)
         }
         else{
 
@@ -20,7 +21,7 @@ const sign_in = () =>{
                 {
     
                     users.push({"username" : username_box_value, "password" : password_box_value})
-                    dashboard_page('container')
+                    dashboard_page('container' , username_box_value)
                 }
                 else{
     
@@ -36,10 +37,7 @@ const sign_in = () =>{
 
     }
 
-    //go to theme page for selecting theme
-    // document.getElementById("username-login").value = ''
-    // document.getElementById("password-login").value = ''
-    console.log(users)
+
 
 }
 

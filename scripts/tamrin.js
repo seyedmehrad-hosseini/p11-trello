@@ -1,6 +1,2 @@
-const showfile=()=>{
-
-    const b =document.getElementById("profile_pic").value
-    console.log(b)
-    // document.getElementById("profile-header").src = b
-}
+import { add_info } from "./dashboard/main-of-dashboard/backend-dashboard/get-user-info.js";
+add_info()
