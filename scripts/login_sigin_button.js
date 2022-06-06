@@ -12,7 +12,7 @@ const sign_in = () =>{
         if(users =='' ){
 
             users.push({"username" : username_box_value, "password" : password_box_value})
-            main_page_theme('container')
+            dashboard_page('container')
         }
         else{
 
@@ -20,7 +20,7 @@ const sign_in = () =>{
                 {
     
                     users.push({"username" : username_box_value, "password" : password_box_value})
-                    main_page_theme('container')
+                    dashboard_page('container')
                 }
                 else{
     

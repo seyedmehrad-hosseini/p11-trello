@@ -1,4 +1,4 @@
-const main_theme_load = (func =info(), list_id) =>{
+const main_of_dashboard_load = (func =info(), list_id) =>{
     //get maintheme id and put argument id in that
     
 
