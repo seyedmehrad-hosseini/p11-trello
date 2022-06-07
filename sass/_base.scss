@@ -37,6 +37,11 @@ $color-task-hov-hov :rgba(119, 109, 109, 0.534);
 $tick-bg-color :#d3d3d3b5;
 $tick-color :#ffffff;
 
+//edit box color
+$background-edit-box :#7c7a7a85;
+$background-edit-box-hover :#4e97c2;
+
+
 @mixin transition($num) {
     transition:#{$num}s ease-in-out ;
     -webkit-transition:#{$num}s ease-in-out;

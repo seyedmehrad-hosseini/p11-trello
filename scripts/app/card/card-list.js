@@ -10,8 +10,11 @@ const card_list = (usename_of_user) =>{
         <div class="card" id="${iterator.id}">
             <div>
                 <span>${iterator.value}</span>
-                <i class="fa fa-ellipsis-h"></i>
-
+                <i class="fa fa-ellipsis-h" onclick="show_edit_box('edit-box-${iterator.id}')"></i>
+                <div id="edit-box-${iterator.id}">
+                    <i class="fa fa-pencil edit-icon"></i>
+                    <i class="fa fa-close" onclick="del_card('${usename_of_user}','${iterator.id}')"></i>
+                </div>
             </div>
             <div class='task-list' id="task-list">
 
@@ -29,4 +32,10 @@ const card_list = (usename_of_user) =>{
     
 
     return card_html
+}
+
+const show_edit_box = (edit_box_id) => {
+
+    document.getElementById(edit_box_id).classList.toggle("edit-box-card");
+
 }

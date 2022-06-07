@@ -1,6 +1,20 @@
     const users = [{"username" :"ali" , "password" : "123"}]
 
+    const cards = [{"username" : "ali",
+    card : [
+        {"id" :'card1-test',
+        "value" : "to-do"
+            },
+        {"id" :'card2-test',
+        "value" : "doing"
+            },
 
+        ]
+    },
+
+
+
+]
     const sign_in = () =>{
     
     const username_box_value = document.getElementById("username-login").value
@@ -21,6 +35,7 @@
                 {
     
                     users.push({"username" : username_box_value, "password" : password_box_value})
+                    cards.push({"username" : username_box_value, card : []})
                     dashboard_page('container' , username_box_value)
                 }
                 else{

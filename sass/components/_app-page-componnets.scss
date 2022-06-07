@@ -11,12 +11,20 @@
 
 
     div{
+        position: relative;
 
         span{
             padding: 8px;
             display: block;
+            width: 90%;
         }
+        .edit-icon{
+            margin-left: auto;
+        }
+        
         i{
+            margin-left: auto;
+            width: 5%;
             cursor: pointer;
             padding: 5px;
             &:hover{
@@ -25,6 +33,37 @@
                 background-color: $color-hover1;
                 @include border-radius(3)
             }
+        }
+        div{
+            position: absolute;
+            right: -70px;
+            top : 0px;
+            z-index: 40;
+            width: 0px;
+            overflow: hidden;
+            @include transition(.5);
+            @include flex-center;
+            flex-direction: column;
+            direction: ltr;
+            gap: 2px;
+
+            i{
+                width: 75%;
+                background-color: $bg-searchbox-color;
+                @include border-radius(3);
+                border: 1px solid $border-serachbox-color;
+                color: white;
+                &:hover{
+                    cursor: pointer;
+                    padding: 5px;
+                    background-color: $background-edit-box-hover ;
+                    @include border-radius(3)
+                }
+
+}
+        }
+        .edit-box-card{
+            width: 70px !important;
         }
     }
 }
