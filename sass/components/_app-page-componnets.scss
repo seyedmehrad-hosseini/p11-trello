@@ -1,6 +1,6 @@
 .card{
-    // color: $color-card;
-    background-color: $color-white;
+    color: $color-card;
+    background-color: $color-card-bg;
     width: 250px;
     padding: 15px;
     height: max-content;
@@ -22,7 +22,7 @@
             &:hover{
                 cursor: pointer;
                 padding: 5px;
-                // background-color: $color-hover1;
+                background-color: $color-hover1;
                 @include border-radius(3)
             }
         }
@@ -45,12 +45,12 @@
         @include border-radius(3);
         outline: 0;
         padding: 5px;
-        // background-color: $color-bg-addcard;
-        // color: $color-white;
+        background-color: $color-bg-addcard;
+        color: $color-white;
     }
     ::placeholder{
 
-        // color: $color-white;
+        color: $color-white;
         opacity: 1; 
         font-size: 1rem;
 
@@ -88,6 +88,7 @@
 
     height: 15px;
     @include flex-center;
+    justify-content: space-between !important;
     width: inherit;
     background-color: $color-white;
     font-weight: 500;
@@ -96,8 +97,11 @@
     @include border-radius(2);
     @include transition(.2);
     box-shadow: 0px 1px 0px 0px #0000004a;
+    i{
+        display: none;
+    }
     &:hover{
-        // background-color: $color-task-hov;
+        background-color: $color-task-hov;
         i{
             display: block;
             padding: 5px;
@@ -106,7 +110,7 @@
             @include border-radius(2);
             @include transition(.2);
             &:hover{
-                // background-color: $color-task-hov-hov;
+                background-color: $color-task-hov-hov;
             }
         }
         

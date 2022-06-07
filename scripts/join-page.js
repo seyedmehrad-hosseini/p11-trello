@@ -23,9 +23,6 @@ const join_page = () =>{
 
     
     `
-    console.log(d)
-    console.log(document.getElementById("container"))
-
     document.getElementById("container").innerHTML = d
 
 }

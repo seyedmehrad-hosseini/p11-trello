@@ -1,11 +1,13 @@
 .app-page{
     width: 98;
-    height: 100vh;
+    height: 88vh;
     background-image: url(../images/bg-4.jpg);
     background-size: cover;
     background-position: 50%;
     font-family: sans-serif;
     padding: 1%;
+    display: flex;
+    overflow-x: scroll;
     .card-list{
         display: flex;
     }
