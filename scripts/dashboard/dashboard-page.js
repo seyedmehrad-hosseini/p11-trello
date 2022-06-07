@@ -15,7 +15,9 @@ const dashboard_page = (id , usename_of_user) =>{
     `
 
     document.getElementById(id).innerHTML = b
-    header("dashboard-header")
+    header()
+    document.getElementById("dashboard-header").innerHTML=header()
+
     sidbar_in_dashboard("side-bar",usename_of_user)
     main_of_dashboard_load(info(usename_of_user),"list1",)
 

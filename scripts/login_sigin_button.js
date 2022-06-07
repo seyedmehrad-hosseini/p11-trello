@@ -49,6 +49,8 @@ const ckeck_is_logedin = () =>{
     if(!check_username(users , username_box_value) & !check_password(users , password_box_value)){
 
         console.log("yes succesfully")
+        header("container")
+        document.getElementById("container").innerHTML = header("container") + app_page()
     }
     else{
         console.log("username or pass is incurrect")

@@ -43,5 +43,5 @@ const header = (id) =>{
             </div>
     `
 
-    document.getElementById(id).innerHTML= a
+    return a
 }
