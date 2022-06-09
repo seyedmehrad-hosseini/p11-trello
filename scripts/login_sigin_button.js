@@ -2,12 +2,29 @@
 
     const cards = [{"username" : "ali",
     card : [
-        {"id" :'card1-test',
-        "value" : "to-do"
-            },
-        {"id" :'card2-test',
-        "value" : "doing"
-            },
+        // {"id" :'card1-test',
+        // "value" : "to-do",
+        // tasks : [
+        //             {"id" : 'task1',
+        //             'value' : 'study'
+        //             },
+        //             {"id" : 'task2',
+        //             'value' : 'srest'
+        //             }
+        //         ]
+        //     },
+        // {"id" :'card2-test',
+        // "value" : "doing",
+        // tasks : [
+        //     {"id" : 'task1',
+        //     'value' : 'study'
+        //     },
+        //     {"id" : 'task2',
+        //     'value' : 'srest'
+        //     }
+        // ]
+        //     },
+
 
         ]
     },
@@ -15,6 +32,9 @@
 
 
 ]
+
+
+
     const sign_in = () =>{
     
     const username_box_value = document.getElementById("username-login").value

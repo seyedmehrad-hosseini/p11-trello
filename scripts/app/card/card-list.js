@@ -29,18 +29,18 @@ const card_list = (usename_of_user) =>{
                
 
             </div>
-            <div class='task-list' id="task-list">
+            <div class='task-list' id="task-list-${iterator.id}">
 
 
             </div>
             <div class='add-task'>
-                <input placeholder='+ Add a task' id='add-task-input' onChange=''></input>
-                <button onclick="add_task()" >Add</button>
+                <input placeholder='+ Add a task' id='add-task-input-${iterator.id}' onChange=''></input>
+                <button onclick="add_task('${usename_of_user}','${iterator.id}')" >Add</button>
             </div>
         </div>
 `
 
-        
+   
     }
     
 
