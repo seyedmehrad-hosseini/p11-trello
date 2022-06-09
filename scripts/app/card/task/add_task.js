@@ -8,9 +8,12 @@ const add_task = (usename_of_user , card_id) =>{
         const user_card_index_array = find_evrycard_of_everyuser_in_cards_array(usename_of_user,card_id)
         console.log(`card_id send is :${card_id}`)
         console.log(user_card_index_array)
-        cards[user_card_index_array[0]].card[user_card_index_array[1]].tasks.push({"id" : `task${id_task}` , "value" : newtask_value} )
+
+        task_id = `${card_id}-task${id_task}`
+        cards[user_card_index_array[0]].card[user_card_index_array[1]].tasks.push({"id" : task_id , "value" : newtask_value} )
     
-        document.getElementById(`task-list-${card_id}`).innerHTML = task_list(usename_of_user , card_id)
+        document.getElementById(`task-list-${card_id}`).innerHTML = task_list(usename_of_user , card_id,task_id ,newtask_value)
+
         document.getElementById(`add-task-input-${card_id}`).value = ''
     
     }

@@ -11,10 +11,10 @@
     position: relative;
 
 
-        div{
+        .title-box{
             position: relative;
 
-            div{
+            .input-class{
                 display: block;
                 width: 90%;
                 input{
@@ -70,46 +70,7 @@
         }
         
             }
-        .edit-box-none{
-            position: absolute;
-            left: 278px;
-            top : 17px;
-            z-index: 40;
-            width: 0px;
-            overflow: hidden;
-            @include transition(.7);
-            @include flex-center;
-            flex-direction: column;
-            direction: ltr;
-            gap: 2px;
-
-            i{
-                width: max-content;
-                background-color: $bg-searchbox-color;
-                @include border-radius(3);
-                border: 1px solid $border-serachbox-color;
-                color: white;
-                direction: rtl;
-                font-size: .8em;
-
-                &:hover{
-                    cursor: pointer;
-                    padding: 5px;
-                    background-color: $background-edit-box-hover ;
-                    @include border-radius(3)
-                }
-                span{
-                    font-size: .6em;
-                    margin-left: 2px;
-                    display: inline;
-                }
-            }
-
-
-}
-        .edit-box-card{
-            width: 130px  !important;
-        }
+        
     
 }
 .card >:nth-child(1){
@@ -155,19 +116,19 @@
    
 }
 
-.task-list{
+// .task-list{
 
-    div{
-        div{
-            i{
-                display: none;
-            }
-        }
-    }
+//     div{
+//         div{
+//             i{
+//                 display: none;
+//             }
+//         }
+//     }
    
 
 
-}
+// }
 .task{
 
     height: 15px;
@@ -181,12 +142,54 @@
     @include border-radius(2);
     @include transition(.2);
     box-shadow: 0px 1px 0px 0px #0000004a;
-    i{
+    position: relative;
+    .edit-box-none{
+        position: absolute;
+        left: 258px;
+        top : 0px;
+        z-index: 40;
+        width: 0px;
+        overflow: hidden;
+        @include transition(.7);
+        display: flex;
+        flex-direction: column;
+        direction: ltr;
+        gap: 2px;
+
+        i{
+            padding: 5px;
+            width: max-content;
+            background-color: $bg-searchbox-color;
+            @include border-radius(3);
+            border: 1px solid $border-serachbox-color;
+            color: white;
+            direction: rtl;
+            font-size: .8em;
+
+            &:hover{
+                cursor: pointer;
+                padding: 5px;
+                background-color: $background-edit-box-hover ;
+                @include border-radius(3)
+            }
+            span{
+                font-size: .6em;
+                margin-left: 2px;
+                display: inline;
+            }
+        }
+
+
+}
+    .edit-box-card{
+        width: 130px  !important;
+    }
+    .edit-icon-task{
         display: none;
     }
     &:hover{
         background-color: $color-task-hov;
-        i{
+        .edit-icon-task{
             display: block;
             padding: 5px;
             font-size: .7em;
@@ -197,6 +200,7 @@
                 background-color: $color-task-hov-hov;
             }
         }
+        
         
     }
 
