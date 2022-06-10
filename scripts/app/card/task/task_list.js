@@ -9,7 +9,6 @@ const task_list = (usename_of_user , card_id ,task_id ,task_value) =>{
         <div class='task' id="${iterator.id}">
             <span id="${iterator.id}-title">${iterator.value}</span>
             <i class="fa fa-pencil edit-icon-task" onclick="show_edit_box('edit-box-${iterator.id}')"></i>
-            
             <div id="edit-box-${iterator.id}" class="edit-box-none">
                 
                 <i class="fa fa-pencil edit-icon">
