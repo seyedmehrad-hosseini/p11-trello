@@ -6,8 +6,7 @@ const add_task = (usename_of_user , card_id) =>{
     if(newtask_value !== ''){
 
         const user_card_index_array = find_evrycard_of_everyuser_in_cards_array(usename_of_user,card_id)
-        console.log(`card_id send is :${card_id}`)
-        console.log(user_card_index_array)
+
 
         task_id = `${card_id}-task${id_task}`
         cards[user_card_index_array[0]].card[user_card_index_array[1]].tasks.push({"id" : task_id , "value" : newtask_value} )

@@ -5,7 +5,7 @@ const card_list = (usename_of_user) =>{
 
     var card_html = ``
     for (const iterator of cards[user_index].card) {
-        console.log(iterator)
+
         card_html =card_html + `
         <div class="card" id="${iterator.id}">
             <div class="title-box">

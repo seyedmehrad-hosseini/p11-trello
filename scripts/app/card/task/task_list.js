@@ -3,7 +3,7 @@ const task_list = (usename_of_user , card_id ,task_id ,task_value) =>{
 
     var task_html = ``
     for (const iterator of cards[user_card_index_array[0]].card[user_card_index_array[1]].tasks) {
-        console.log(iterator)
+
         task_html =task_html + 
         `
         <div class='task' id="${iterator.id}">
@@ -12,13 +12,13 @@ const task_list = (usename_of_user , card_id ,task_id ,task_value) =>{
             <div id="edit-box-${iterator.id}" class="edit-box-none">
                 
                 <i class="fa fa-pencil edit-icon">
-                    <span>Edit Card</span>
+                    <span>Edit Task</span>
                 </i>
             
             
             
-                <i class="fa fa-close" onclick="del_card('${usename_of_user}','${iterator.id}')">
-                    <span>Delete Card</span>
+                <i class="fa fa-close" onclick="del_task('${usename_of_user}','${card_id}','${iterator.id}')">
+                    <span>Delete Task</span>
                 </i>
             
             
