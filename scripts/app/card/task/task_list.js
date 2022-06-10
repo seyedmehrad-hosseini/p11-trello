@@ -9,9 +9,13 @@ const task_list = (usename_of_user , card_id ,task_id ,task_value) =>{
         <div class='task' id="${iterator.id}">
             <span id="${iterator.id}-title">${iterator.value}</span>
             <i class="fa fa-pencil edit-icon-task" onclick="show_edit_box('edit-box-${iterator.id}')"></i>
+            <div id="input-div-edit-${iterator.id}" class="input-class-edit-task">
+                <input id='input-edit-${iterator.id}' onblur="" value="">
+                <button onclick="save_title_edited('${usename_of_user}','${card_id}','${iterator.id}','input-edit-${iterator.id}','input-div-edit-${iterator.id}','${iterator.value}')" >Save</button>
+            </div>
             <div id="edit-box-${iterator.id}" class="edit-box-none">
                 
-                <i class="fa fa-pencil edit-icon">
+                <i class="fa fa-pencil edit-icon" onclick="add_input_title('input-div-edit-${iterator.id}','input-edit-${iterator.id}','${iterator.value}')">
                     <span>Edit Task</span>
                 </i>
             

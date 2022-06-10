@@ -11,6 +11,10 @@ const hiden_edit_box = () => {
 
     document.querySelector(".edit-box-card").classList.remove("edit-box-card");
     document.getElementById("close-edit-box-task" ).style.display ="none";
+    document.querySelector(".input-class-edit-task").style.display ="none" ;
+    console.log(document.querySelector(".input-class-edit-task"))
+
+
 
 
 }

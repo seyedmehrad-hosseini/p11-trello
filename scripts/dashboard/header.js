@@ -1,5 +1,5 @@
 
-const header = (id) =>{
+const header = (id,usename_of_user) =>{
     const a = `
             <div class="header">
 
@@ -35,7 +35,7 @@ const header = (id) =>{
                         <i class='far fa-bell'></i>
 
                     </li>
-                    <li>
+                    <li onclick="dashboard_page('${id}','${usename_of_user}')">
                         <img id="profile-header" src="images/tabiat.jpg" alt="">
                     </li>
                 </ul>

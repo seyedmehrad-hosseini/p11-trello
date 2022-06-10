@@ -4,7 +4,7 @@ const main_of_dashboard_load = (func , list_id) =>{
 
 
     document.getElementById("maintheme").innerHTML = func
-
+    
     //this code changes the background color in the sidebar list items with click event
     const account_list = document.getElementById("account-list").getElementsByTagName("li")
     for (const iterator of account_list) {

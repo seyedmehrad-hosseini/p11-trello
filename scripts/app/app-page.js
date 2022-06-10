@@ -1,6 +1,11 @@
 const app_page = (usename_of_user) =>{
+
+    const user_index = find_user_index(usename_of_user)
+    console.log(user_index)
+    console.log(users[user_index].backgroundimg_address)
+
     const app_page_html = `
-                <div class="app-page" id="app-page">
+                <div class="app-page" id="app-page"style="background-image :url(${users[user_index].backgroundimg_address}) ;">
 
                     <div class="card-list" id = "card-list">
 

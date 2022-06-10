@@ -5,13 +5,13 @@ const select_bg = (id ,usename_of_user)=>{
     for (const iterator of bg_list) {
 
         const span= document.getElementById(iterator.id).getElementsByTagName("span")
-        const img_addres= document.getElementById(iterator.id).getElementsByTagName("img")[0].attributes.src
+        const img_addres= document.getElementById(iterator.id).getElementsByTagName("img")[0].getAttribute('src')
         if(iterator.id == id){
 
             document.getElementById(span[0].id).style.opacity = "1";
             const user_index =  users.findIndex((item) => item.username === usename_of_user)//findes user index
             console.log(img_addres)
-            users[user_index].backgroundimg_address = img_addres
+            users[user_index].backgroundimg_address = `file:///D:/tahlildadeproject/p11-trello/${img_addres}`
             console.log(users)
 
         }
