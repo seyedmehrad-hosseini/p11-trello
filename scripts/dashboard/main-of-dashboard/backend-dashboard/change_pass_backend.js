@@ -8,5 +8,12 @@ const changing_pass = (usename_of_user)=>{
     if(users[user_index].password ==last_pass & users[user_index].password ==repeat_pass){
 
         users[user_index].password =new_pass
+        alert("your password changed")
     }
+    else{
+        alert("last pass is incurrect")
+    }
+    document.getElementById("last-pass-input").value = ''
+    document.getElementById("repeat-pass-input").value =''
+    document.getElementById("new-pass-input").value =''
 }

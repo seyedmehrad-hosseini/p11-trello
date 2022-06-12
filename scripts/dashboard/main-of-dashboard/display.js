@@ -1,5 +1,7 @@
 const display=(usename_of_user) =>{
 
+    
+
     const a = `
                     <div class="display-theme" id="display-dashboard">
                         <span class="display-title">Select background image for app</span>
@@ -37,3 +39,4 @@ const display=(usename_of_user) =>{
     `
     return a
 }
+

@@ -1,4 +1,12 @@
-    const users = [{"username" :"ali" , "password" : "123" ,}]
+    const users = [{"username" :"ali" ,
+                     "password" : "123" ,
+                     "backgroundimg_address" :"file:///D:/tahlildadeproject/p11-trello/images/bg-4.jpg",
+                     "name" :'',
+                     "lastname" :'',
+                     "phone" :'',
+                     "email": '',
+
+                    }]
 
     const cards = [{"username" : "ali",
     card : [
@@ -54,13 +62,19 @@
                 if(check_username(users , username_box_value))
                 {
     
-                    users.push({"username" : username_box_value, "password" : password_box_value})
+                    users.push({"username" : username_box_value,
+                                 "password" : password_box_value,
+                                "name" :'',
+                                "lastname" :'',
+                                "email": '',
+                                "phone" :'',
+                                "backgroundimg_address" :''})
                     cards.push({"username" : username_box_value, card : []})
                     dashboard_page('container' , username_box_value)
                 }
                 else{
     
-                    console.log("this username used") 
+                    alert("this username used") 
                         
                     }
             }
@@ -68,7 +82,7 @@
     }
     else{
 
-        console.log("the box is empty ")
+        alert("the box is empty")
 
     }
 
@@ -83,12 +97,18 @@ const ckeck_is_logedin = () =>{
 
     if(!check_username(users , username_box_value) & !check_password(users , password_box_value)){
 
-        console.log("yes succesfully")
-        app_page_load(username_box_value)
+        const user_index = find_user_index(username_box_value)
+        if(users[user_index].backgroundimg_address !==''){
+            app_page_load(username_box_value)
+
+        }else{
+            dashboard_page('container' , username_box_value)
+
+        }
 
     }
     else{
-        console.log("username or pass is incurrect")
+        alert("username or pass is incurrect")
     }
 
 }

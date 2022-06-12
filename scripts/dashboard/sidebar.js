@@ -10,7 +10,9 @@ const sidbar_in_dashboard = (id ,usename_of_user)=>{
             <li id="list2"  onclick="main_of_dashboard_load(display('${usename_of_user}') , id)">Display</li>
             <li id="list3"  onclick="main_of_dashboard_load(changepass('${usename_of_user}') , id)">Change Password</li>
             <li id="list4"  onclick="main_of_dashboard_load(manage_acc('${usename_of_user}') , id)">Account Management</li>
-        </ul>
+            <li id="list5"  onclick="app_page_load('${usename_of_user}')">Go to trello app</li>
+        
+            </ul>
     
 
     `

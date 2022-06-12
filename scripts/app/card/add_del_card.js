@@ -20,6 +20,8 @@ const add_card = (usename_of_user) =>{
 
         document.getElementById("add-card-input").value =''
 
+    }else{
+        alert("write card name")
     }
 
 

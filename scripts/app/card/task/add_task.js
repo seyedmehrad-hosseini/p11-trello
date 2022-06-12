@@ -15,6 +15,8 @@ const add_task = (usename_of_user , card_id) =>{
 
         document.getElementById(`add-task-input-${card_id}`).value = ''
     
+    }else{
+        alert("write task name")
     }
     // const last_tasklist_html = document.getElementById(`task-list${a}`).innerHTML
     // if(newtask_value !== ''){
