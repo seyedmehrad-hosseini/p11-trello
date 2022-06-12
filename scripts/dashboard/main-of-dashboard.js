@@ -1,9 +1,12 @@
-const main_of_dashboard_load = (func , list_id) =>{
+const main_of_dashboard_load = (func , list_id , usename_of_user) =>{
     //get maintheme id and put argument id in that
     
 
-
+ 
     document.getElementById("maintheme").innerHTML = func
+    if(func == display(usename_of_user)){
+        select_bg_when_load_page(usename_of_user)
+    }
     
     //this code changes the background color in the sidebar list items with click event
     const account_list = document.getElementById("account-list").getElementsByTagName("li")

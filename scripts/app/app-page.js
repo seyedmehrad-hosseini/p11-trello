@@ -5,7 +5,7 @@ const app_page = (usename_of_user) =>{
     console.log(users[user_index].backgroundimg_address)
 
     const app_page_html = `
-                <div class="app-page" id="app-page"style="background-image :url(${users[user_index].backgroundimg_address}) ;">
+                <div class="app-page" id="app-page"style="background-image :url(${users[user_index].backgroundimg_address.addres}) ;">
 
                     <div class="card-list" id = "card-list">
 

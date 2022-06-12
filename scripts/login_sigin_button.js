@@ -1,6 +1,9 @@
     const users = [{"username" :"ali" ,
                      "password" : "123" ,
-                     "backgroundimg_address" :"file:///D:/tahlildadeproject/p11-trello/images/bg-4.jpg",
+                     "backgroundimg_address" :{
+                         "addres" :"file:///D:/tahlildadeproject/p11-trello/images/bg-4.jpg",
+                         "div_id" : "display-bg4"
+                     },
                      "name" :'',
                      "lastname" :'',
                      "phone" :'',
@@ -68,7 +71,10 @@
                                 "lastname" :'',
                                 "email": '',
                                 "phone" :'',
-                                "backgroundimg_address" :''})
+                                "backgroundimg_address" :{
+                                    "addres":'',
+                                    "div_id":''
+                                }})
                     cards.push({"username" : username_box_value, card : []})
                     dashboard_page('container' , username_box_value)
                 }
@@ -98,7 +104,10 @@ const ckeck_is_logedin = () =>{
     if(!check_username(users , username_box_value) & !check_password(users , password_box_value)){
 
         const user_index = find_user_index(username_box_value)
-        if(users[user_index].backgroundimg_address !==''){
+        console.log(users[user_index].backgroundimg_address)
+        console.log({})
+
+        if(users[user_index].backgroundimg_address.addres !== ''){
             app_page_load(username_box_value)
 
         }else{
