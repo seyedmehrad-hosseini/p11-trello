@@ -19,10 +19,14 @@ const task_list = (usename_of_user , card_id ,task_id ,task_value) =>{
                     <span>Edit Task</span>
                 </i>
             
-            
-            
+                      
                 <i class="fa fa-close" onclick="del_task('${usename_of_user}','${card_id}','${iterator.id}')">
                     <span>Delete Task</span>
+                </i>
+
+
+                <i class='fas fa-arrow-right' onclick="move_task('${usename_of_user}','${card_id}','${iterator.id}','${iterator.value}')">
+                    <span>Move</span>
                 </i>
             
             
