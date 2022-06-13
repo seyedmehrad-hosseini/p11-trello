@@ -131,6 +131,7 @@
 // }
 .task{
 
+    @include transition(.5);
     height: 15px;
     @include flex-center;
     justify-content: space-between !important;
