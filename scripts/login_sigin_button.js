@@ -76,7 +76,11 @@
                                     "div_id":''
                                 }})
                     cards.push({"username" : username_box_value, card : []})
-                    dashboard_page('container' , username_box_value)
+                    document.getElementById('container').innerHTML = loading_animation()
+                    setTimeout(()=>{
+                        dashboard_page('container' , username_box_value)
+                    }, 1000)
+                    
                 }
                 else{
     
@@ -108,10 +112,18 @@ const ckeck_is_logedin = () =>{
         console.log({})
 
         if(users[user_index].backgroundimg_address.addres !== ''){
-            app_page_load(username_box_value)
+            
+            document.getElementById('container').innerHTML = loading_animation()
+            setTimeout(()=>{
+                app_page_load(username_box_value)
+            }, 1000)
 
         }else{
-            dashboard_page('container' , username_box_value)
+            
+            document.getElementById('container').innerHTML = loading_animation()
+            setTimeout(()=>{
+                dashboard_page('container' , username_box_value)
+            }, 1000)
 
         }
 

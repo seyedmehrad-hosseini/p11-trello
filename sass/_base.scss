@@ -41,6 +41,9 @@ $tick-color :#ffffff;
 $background-edit-box :#7c7a7a85;
 $background-edit-box-hover :#4e97c2;
 
+//load animation color
+$loading-color :rgb(212, 212, 212);
+
 
 @mixin transition($num) {
     transition:#{$num}s ease-in-out ;

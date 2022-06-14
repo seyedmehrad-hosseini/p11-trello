@@ -1,0 +1,50 @@
+.load-animation{
+
+    width: 100%;
+    height: 100%;
+    @include flex-center;
+    .load-animation-box-list{
+
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1px;
+        position: relative;
+        span{
+            position: absolute;
+            top: 0px;
+            width: 30%;
+            height: 0px;
+            background-color: $loading-color;
+            @include border-radius(2);
+            animation-name: loading;
+            animation-direction: alternate;
+            animation-duration: .35s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+
+        }
+        :nth-child(1){
+            left: 0px;
+        }
+        :nth-child(2){
+            left: 11px;
+            animation-delay :.1s;
+
+        }
+        :nth-child(3){
+            left: 22px;
+            animation-delay :.2s;
+
+        }
+    }
+
+}
+@keyframes loading{
+    0% { height: 0px;}
+    50% {height: 16px;}
+    100% {height: 32px;}
+}
